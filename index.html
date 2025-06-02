@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Carbona | Restaurante a la Brasa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-roboto">
+    <!-- Navegación -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-playfair font-bold">
+                    La Carbona
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="hover:text-gray-600">Inicio</a>
+                    <a href="#carta" class="hover:text-gray-600">Carta</a>
+                    <a href="#reserva" class="hover:text-gray-600">Reservar</a>
+                    <a href="#contacto" class="hover:text-gray-600">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="h-screen bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');">
+        <div class="h-full bg-black bg-opacity-50 flex items-center justify-center text-white text-center">
+            <div>
+                <h1 class="text-5xl md:text-6xl font-playfair mb-4">La Carbona</h1>
+                <p class="text-xl md:text-2xl mb-8">Pasión & Brasas</p>
+                <a href="#reserva" class="bg-white text-black px-8 py-3 rounded-full hover:bg-gray-200 transition duration-300">
+                    Reservar Mesa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-playfair text-center mb-12">Bienvenidos a La Carbona</h2>
+            <p class="text-lg text-center max-w-3xl mx-auto">
+                En La Carbona, la tradición y la pasión por la carne se fusionan para ofrecer una experiencia culinaria única. 
+                Te invitamos a unirte a nosotros y disfrutar de la excelencia de nuestras carnes a la parrilla, 
+                preparadas con amor y destreza, en un ambiente acogedor y lleno de historia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Horario y Ubicación -->
+    <section class="bg-gray-100 py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-playfair text-center mb-12">Horario y Ubicación</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl mb-4">Horario de Apertura</h3>
+                    <p class="mb-2"><strong>Lunes a Sábado:</strong><br>13:30 – 16:30 / 20:30 - 23:30 h</p>
+                    <p class="mb-2"><strong>Domingo:</strong><br>13:30 – 16:30</p>
+                    <p>Domingo tarde: Cerrado</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl mb-4">Dónde estamos</h3>
+                    <p>Calle Albareda 13</p>
+                    <p>Junto a la Plaza Nueva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reserva -->
+    <section id="reserva" class="py-20 px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-playfair text-center mb-12">Reserva tu Mesa</h2>
+            <form class="space-y-6">
+                <div>
+                    <label class="block mb-2">Nombre completo</label>
+                    <input type="text" class="w-full p-3 border rounded" required>
+                </div>
+                <div>
+                    <label class="block mb-2">Email</label>
+                    <input type="email" class="w-full p-3 border rounded" required>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block mb-2">Fecha</label>
+                        <input type="date" class="w-full p-3 border rounded" required>
+                    </div>
+                    <div>
+                        <label class="block mb-2">Hora</label>
+                        <input type="time" class="w-full p-3 border rounded" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="block mb-2">Número de personas</label>
+                    <input type="number" class="w-full p-3 border rounded" required min="1">
+                </div>
+                <button type="submit" class="w-full bg-black text-white py-3 rounded hover:bg-gray-800 transition duration-300">
+                    Confirmar Reserva
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl mb-4 font-playfair">La Carbona</h3>
+                    <p>Calle Albareda 13</p>
+                    <p>Junto a la Plaza Nueva</p>
+                </div>
+                <div>
+                    <h3 class="text-xl mb-4 font-playfair">Contacto</h3>
+                    <p>Teléfono: +34 XXX XXX XXX</p>
+                    <p>Email: info@lacarbona.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl mb-4 font-playfair">Síguenos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+                <p>&copy; 2023 La Carbona. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
